@@ -1,0 +1,84 @@
+/*Entire page*/
+#container{
+    background-color: black;
+    font-family: "Barlow Condensed";
+    color: white;
+}
+
+
+/*Main content*/
+.synopsis1{
+
+    font-size: 24px;
+}
+
+/*Used AI to figure out how to style images in CSS*/
+img{
+
+    width: 200px;
+}
+.info{
+
+    font-size: 20px;
+
+}
+
+.character{
+    font-size: 24px;
+
+}
+
+
+/*Header - used AI for help with centering the buttons*/
+#header {
+
+    text-align: center;
+    font-family: "Balboa";
+
+}
+.btn-container {
+
+    
+    width: auto;
+    height:auto;
+    border:1px solid white;
+    margin: auto;
+    padding: 10px;;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+.link-button {
+
+    width: 500px;
+    height:auto;
+    text-align:center;
+    line-height:50px;
+    font: size 22px;
+    border:10px white;
+    margin-right:2px;
+    margin-left:2px;
+    background-color:red;
+    font-family: "Barlow Condensed";
+    color: white;
+
+}
+
+
+/*Footer*/
+#footer{
+
+    font-size: 24px;
+    color: white;
+}
+
+/*Some functions to help with spacing. Used AI to find this*/
+.new-line {
+
+    clear: both;     /* Moves element below any floated objects */
+    display: block;  /* Ensures it takes up the full width */
+
+}
