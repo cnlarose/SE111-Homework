@@ -15,7 +15,9 @@
 /*Used AI to figure out how to style images in CSS*/
 img{
 
-    width: 200px;
+    width: 400px;
+    gap: 15px;
+    border: solid 2px;
 }
 .info{
 
@@ -32,11 +34,20 @@ img{
     font-size: 24px;
 }
 
+#screenshots{
+
+    font-size: 24px;
+}
+
 /*Header - used AI for help with centering the buttons*/
 #header {
 
     text-align: center;
-    font-family: "Balboa";
+    font-size: 128px;
+    background-color: gold;
+    color: black;
+    fill: gold;
+    
 
 }
 .btn-container {
