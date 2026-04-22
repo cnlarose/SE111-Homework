@@ -28,6 +28,9 @@ img{
 
 }
 
+#reviewSection{
+    font-size: 24px;
+}
 
 /*Header - used AI for help with centering the buttons*/
 #header {
@@ -64,6 +67,8 @@ img{
     background-color:red;
     font-family: "Barlow Condensed";
     color: white;
+    transition-duration: 3s;
+
 
 }
 
@@ -75,6 +80,10 @@ img{
     color: white;
 }
 
+.info{
+    font-size: 24px;
+}
+
 /*Some functions to help with spacing. Used AI to find this*/
 .new-line {
 
@@ -82,3 +91,9 @@ img{
     display: block;  /* Ensures it takes up the full width */
 
 }
+
+.link-button:hover{
+    background-color: black;
+    transform: scale(1.5);
+}
+
