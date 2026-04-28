@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Your Name Here">
+    <meta name="author" content="Charles LaRose">
     <meta name="description" content="Default HTML Page for SE 111">
     
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -14,6 +14,23 @@
 </head>
 <body>
     <!--Build your Table and Form here-->
-    
+    <h1>Birthday Party Registration Form</h1>
+    <form action="confirm.html" method="GET">
+        <table>
+             <thead>
+            <tr>
+                <td><h2>Labels</h2></td>
+                <td><h2>Form Fields</h2></td>
+            </tr>
+            </thead>
+            <tbody>
+                <td>Parent/Guardian Name</td>
+                <td><input type="text" required maxlength="20" name="gfirst" id="g-first" placeholder="First Name">
+                <br>
+                <input type="text" required maxlength="20" name="glast" id="g-last" placeholder="Last Name"></td>
+            </tbody>
+
+        </table>
+    </form>
 </body>
 </html>
