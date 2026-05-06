@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles LaRose">
+    <title>Week 6 Extra Credit</title>
+</head>
+<body>
+    <script>
+        var hourlyPay = Number(prompt("What is your hourly pay rate?"))
+        var taxRate = Number(prompt("What is your tax rate?"))
+
+        grossPay = hourlyPay * 32 * 2
+        uncleSam = grossPay * taxRate
+        netPay = grossPay - uncleSam
+
+        alert("The gross pay for 2 weeks is: $" + grossPay +"\nUncle Sam's share for 2 weeks is: $" + uncleSam +"\nYour net pay for 2 weeks is: $" + netPay)
+
+        console.log("Gross Pay: $" + grossPay)
+        console.log("Uncle Sam's Share: $" + uncleSam)
+        console.log("Net Pay: $" + netPay)
+
+    </script>
+    
+</body>
+</html>
