@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles LaRose">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <script>
+        var mathType = prompt("Would you like to add, subtract, multiply, or divide?")
+
+        if (mathType == "add" || mathType == "Add")
+        {var add1 = Number(prompt("What is the first number you would like to add?"))
+        var add2 = Number(prompt("What is the second number you would like to add?"))
+        sum = add1 + add2
+        alert(sum)
+        }
+
+        else if(mathType=="subtract" || mathType == "Subtract")
+        {var subtract1 = Number(prompt("What is the first number you would like to subtract?"))
+        var subtract2 = Number(prompt("What is the second number you would like to subtract?"))
+        difference = subtract1-subtract2
+        alert(difference)
+        }
+
+        else if(mathType=="multiply" || mathType == "Multiply")
+        {var multiply1 = Number(prompt("What is the first number you would like to multiply?"))
+        var multiply2 = Number(prompt("What is the second number you would like to multiply?"))
+        product = multiply1 * multiply2
+        alert(product)
+        }
+
+        else if(mathType=="divide" || mathType == "Divide")
+        {var divide1 = Number(prompt("What is the first number you would like to divide?"))
+        var divide2 = Number(prompt("What is the second number you would like to divide?"))
+        quotient = divide1/divide2
+        alert(quotient)
+        }
+
+        else
+         alert("Error. Please enter add if you would like to add, subtract if you would like to subtract, multiply if you would like to multiply, or divide if you would like to divide. Refresh the page to try again.")
+    </script>
+    
+</body>
+</html>
