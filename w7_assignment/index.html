@@ -72,7 +72,7 @@
         
         
 
-        function alertName(e)
+        function alertName()
         {
             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
 
@@ -84,8 +84,8 @@
 
             var fname = document.querySelector("#first").value
             var lname = document.querySelector("#last").value
-            var hours = document.querySelector("#hours").value
-            var rate = document.querySelector("#rate").value
+            var hours = Number(document.querySelector("#hours").value)
+            var rate = Number(document.querySelector("#rate").value)
             
 
 
@@ -106,8 +106,7 @@
             //convert both hours and rate to Number() data types
             //I COULD NOT REMEMBER HOW TO DO THIS. HAD TO LOOK IT UP.
 
-            Number(hours)
-            Number(rate)
+      
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
@@ -127,7 +126,7 @@
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
          
-            `var finalMessage = ${full} <br> ${hours.toFixed(2)} <br> ${rate.toFixed(2)}`
+            var finalMessage = `${full}<br>HOURS: ${hours.toFixed(2)}<br>RATE: $${rate.toFixed(2)}`
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
             var info = document.querySelector("#info")
@@ -137,18 +136,19 @@
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
 
-
+            info.innerHTML+= finalMessage
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
 
-
+            check.innerHTML += `GROSS: ${gross.toFixed(2)} <br> TAX AMOUNT: ${taxAmount.toFixed(2)} <br> NET PAY: ${net.toFixed(2)}`
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
 
             
-            
-            function submitNow(e)
+            var button = document.querySelector(`#submit`)
+            submit.addEventListener(`click`, submitNow)
+            function submitNow()
             {
 
                 /*NOTE FOR TESTING:
