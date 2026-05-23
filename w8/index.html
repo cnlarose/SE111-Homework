@@ -120,13 +120,16 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-					output+=key + ":" + people[i][key]
+
+					//HAD TO LOOKUP HELP FOR THIS PART!
+					output+=key.toUpperCase() + ": " + people[i][key] + "<br>"
+
 				
 				
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				ouput += <hr>
+				output += "<hr>"
 
 
 			}//end of loop going through people array to edit 'output'
@@ -134,6 +137,9 @@
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
+				console.log(output)
+				document.getElementById("output").innerHTML = output;
+
 				
 
 
