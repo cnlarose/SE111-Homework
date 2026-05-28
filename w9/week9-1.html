@@ -22,23 +22,23 @@
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
 	
-	var body1 = document.querySelector("#body")
+	var body1 = document.querySelector("body")
 
 	for(var i=0; i < people.length; i++) {
 
-		let tempDiv;
-
-		tempDiv = document.createElement("div");
+		let tempDiv = document.createElement("div");
 
 		tempDiv.setAttribute("id", String(i));
 
 		tempDiv.setAttribute("class","border");
 
 		for (let key in people[i]) {
-
-			
+			var newPTag = document.createElement("p")
+			newPTag.innerHTML= " " + people[i][key]
+			tempDiv.appendChild(newPTag)
 		}
 
+		body1.appendChild(tempDiv)
 	}
 
 </script>
